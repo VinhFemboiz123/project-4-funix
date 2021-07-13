@@ -1,0 +1,172 @@
+
+* {
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* mobile */
+[class*="col-"] {
+  width: 100%;
+}
+/* desktop */
+@media (min-width: 992px) {
+  #banner {
+    height: 600px;
+    position: relative;
+  }
+  #picslist {
+    clear: both;
+    overflow-y: scroll;
+    overflow: hidden;
+    background-color: rgba(230, 225, 225, 0.925);
+  }
+  .content h1 {
+    font-size:50px;
+    color: white;
+  }
+  .content p {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+  }
+  #banner p {
+    position:absolute;
+    left:70px;
+    top: 150px;
+    margin: 45px;
+  }
+  h1 {
+    position: absolute;
+    left: 80px;
+    top: 100px;
+    margin: 30px;
+  }
+  #header a {
+    color: grey;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  #pics{
+    width: 50%;
+    float: left;
+    padding: 15px;
+  }
+  #pics img {
+    width: 100%;
+  }
+}
+/* tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  #pics{
+    width: 50%;
+    float: left;
+    padding: 15px;
+  }
+}
+@media (max-width: 991px) {
+  #header a {
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .content h1 {
+    color: black;
+    margin: 20px;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+  .content p {
+    color: black;
+    margin: 20px;
+  }
+  h3 {
+    font-size: 32px;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  p {
+    font-family: sans-serif;
+  }
+  h2 {
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+}
+li {
+  display: inline-block;
+  margin: 20px;
+  font-family: sans-serif;
+}
+ul {
+  text-decoration-line: unset;
+  font-style: initial;
+}
+.right {
+  float: right;
+  right: 20px;
+  margin-left: -20px;
+}
+
+#header a {
+   text-decoration: none;
+   color: white;
+   padding: 26px;
+}
+#desc{
+  margin-left: 20px;
+  font-family: sans-serif;
+}
+h3{
+  font-weight: bold;
+}
+#footer{  
+  clear: both;
+  overflow-y: scroll;
+  overflow: hidden;
+  background-color:rgba(243, 242, 242, 0.822);
+}
+#header {
+  background-color: rgb(46, 46, 46);
+  height: 65px;
+}
+#header a:hover {
+  background-color: black;
+}
+h2, h1, #banner p {
+  font-family: lobster, sans-serif;
+}
+#desc p {
+  font-family: dancing script, cursive;
+}
+h2 {
+  font-size: 30px;
+}
+html {
+  overflow-x: hidden;
+}
+
+/* slide show*/
+.carousel-inner img {
+  height: 600px;
+  width: 100%;
+}
+
+/* image gallery */
+.thumbnail img {
+  height: 300px;
+}
+.thumbnail {
+  border: 1px solid silver;
+  padding: 4px;
+  border-radius: 4px;
+  text-align: center;
+}
+.thumbnail p {
+  text-decoration: unset;
+}
+.navbar {
+ padding: 0px;
+}
